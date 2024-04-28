@@ -1,10 +1,23 @@
-# Resumo Git e GitHub 💻
+
+# Aula Git e GitHub 💻
 
 ##
 Respositório contém um resumo sobre Git e GitHub apresentado durante o Bootcamp Java Back-End Santander na plataforma DIO
 
 ## 📚 Documentação
 
+* [Documentação Git]()
+* [Documentação GitHub]()
+
+## ✍ Sumário e Resumo
+
+|Aula|Explicação|
+|---|---|
+|Aula 1|[Criando um Respositório Local Com Git]()|
+|Aula 2|[Salvando Alteração No Respositório local]()|
+|Aula 3|[Desfazendo Alterações No Respositório Local]()|
+
+lista de comandos apresentados:
    ``` git
 	 git init 
 	 git branch -M main
@@ -13,6 +26,7 @@ Respositório contém um resumo sobre Git e GitHub apresentado durante o Bootcam
 	 git status
 	 git commit -m "first commit"
 	 git push -u origin main
+	 git log
    ```
 
 
@@ -77,4 +91,18 @@ Comando de status
 git status
 ```
 	
-	
+O arquivo **.gitignore** serve para colocar arquivos que não é desejado que apareça no repositório remoto.
+Você pode colocar uma pasta por exemplo chamada *"pasta_ignorada"* em um arquivo **.gitignore** assim:
+
+```git
+echo pasta_ignorada > .gitignore
+```
+O arquivo **.gitkeep** é um arquivo criado pelo git para reconhecer um diretório vazio.
+Caso você queira fazer o push de um diretório vazio (por exemplo pasta_vazia) ele não aparecerá para o git então você pode acrescentar esse arquivo .**gitkeep** dentro de seu diretório
+
+
+```git
+touch pasta_vazia\.gitkeep
+```
+
+Assim o git passará a reconhecer sua pasta. Veja pelo git status!
