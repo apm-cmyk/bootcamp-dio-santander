@@ -1,5 +1,5 @@
 
-# Aula Git e GitHub 💻
+# <center>Git e GitHub 💻<ceneter>
 
 ##
 Respositório contém um resumo sobre Git e GitHub apresentado durante o Bootcamp Java Back-End Santander na plataforma DIO
@@ -174,4 +174,3 @@ Para apenas tirar o aquivo da área de preparação:
 git reset nome_arquivo
 ```
 ## Aula 4: Enviando e Baixando Alterações com Respositório Remoto 
-
