@@ -6,19 +6,19 @@ Resumo sobre Git e GitHub apresentado durante o Bootcamp Java Back-End Santander
 
 ## 📚 Documentação
 
-* [Documentação Git]()
-* [Documentação GitHub]()
+* [Documentação Git](https://git-scm.com/doc)
+* [Documentação GitHub](https://docs.github.com/pt)
 
 ## ✍ Sumário e Resumo
 
 |Aula|Explicação|
 |---|---|
-|Aula 1|[Criando um Respositório Local Com Git]()|
-|Aula 2|[Salvando Alteração No Respositório local]()|
-|Aula 3|[Desfazendo Alterações No Respositório Local]()|
-|Aula 4|[Enviando e Baixando Alterações com Respositório Remoto]()|
-|Aula 5|[Trabalhando com Branches - Criando, Mesclando, Deletando e Tratando Conflitos]()|
-|Aula 6|[Trabalhando com Branches - Comandos Úteis no Dia a Dia]()|
+|Aula 1|[Criando um Respositório Local Com Git](https://github.com/apm-cmyk/bootcamp-dio-santander?tab=readme-ov-file#aula-1-criando-um-resposit%C3%B3rio-local-com-git)|
+|Aula 2|[Salvando Alteração No Respositório local](https://github.com/apm-cmyk/bootcamp-dio-santander?tab=readme-ov-file#aula-2-salvando-altera%C3%A7%C3%A3o-no-resposit%C3%B3rio-local)|
+|Aula 3|[Desfazendo Alterações No Respositório Local](https://github.com/apm-cmyk/bootcamp-dio-santander?tab=readme-ov-file#aula-3-desfazendo-altera%C3%A7%C3%B5es-no-resposit%C3%B3rio-local)|
+|Aula 4|[Enviando e Baixando Alterações com Respositório Remoto](https://github.com/apm-cmyk/bootcamp-dio-santander?tab=readme-ov-file#aula-4-enviando-e-baixando-altera%C3%A7%C3%B5es-com-resposit%C3%B3rio-remoto)|
+|Aula 5|[Trabalhando com Branches - Criando, Mesclando, Deletando e Tratando Conflitos](https://github.com/apm-cmyk/bootcamp-dio-santander?tab=readme-ov-file#aula-5-trabalhando-com-branches---criando-mesclando-deletando-e-tratando-conflitos)|
+|Aula 6|[Trabalhando com Branches - Comandos Úteis no Dia a Dia](https://github.com/apm-cmyk/bootcamp-dio-santander?tab=readme-ov-file#aula-6-trabalhando-com-branches---comandos-%C3%BAteis-no-dia-a-dia)|
 
 lista de comandos apresentados:
    ``` git
@@ -39,7 +39,23 @@ lista de comandos apresentados:
 	 git reset --hard hash_do_commit
 	 git ref log
 	 git reset nome_arquivo
-   ```
+	 git remote add origin (https ou chave ssh)
+	 git branch -M main
+	 git push -u origin main
+	 git pull
+	 git checkout -b nome_nova_branch
+	 git checkout main
+	 git branch -v
+	 git branch
+	 git merge nome_nova_branch
+	 git branch -d nome_branch
+	 git fetch origin main
+	 git diff main origin/main
+	 git clone (https ou chave SSH) --branch nome_branch --single-branch
+	 git stash
+	 git stash pop
+	 git stash apply
+```
 
 
 ![texto](https://tenor.com/tbB3.gif)
