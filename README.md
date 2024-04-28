@@ -1,5 +1,5 @@
 
-# <center>Git e GitHub 💻<ceneter>
+# <center>Git e GitHub 💻<center>
 
 ##
 Respositório contém um resumo sobre Git e GitHub apresentado durante o Bootcamp Java Back-End Santander na plataforma DIO
