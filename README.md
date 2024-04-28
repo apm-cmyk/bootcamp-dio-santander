@@ -2,7 +2,7 @@
 # <center>Git e GitHub 💻<center>
 
 ##
-Respositório contém um resumo sobre Git e GitHub apresentado durante o Bootcamp Java Back-End Santander na plataforma DIO
+Resumo sobre Git e GitHub apresentado durante o Bootcamp Java Back-End Santander na plataforma DIO
 
 ## 📚 Documentação
 
@@ -17,6 +17,8 @@ Respositório contém um resumo sobre Git e GitHub apresentado durante o Bootcam
 |Aula 2|[Salvando Alteração No Respositório local]()|
 |Aula 3|[Desfazendo Alterações No Respositório Local]()|
 |Aula 4|[Enviando e Baixando Alterações com Respositório Remoto]()|
+|Aula 5|[Trabalhando com Branches - Criando, Mesclando, Deletando e Tratando Conflitos]()|
+|Aula 6|[Trabalhando com Branches - Comandos Úteis no Dia a Dia]()|
 
 lista de comandos apresentados:
    ``` git
@@ -174,3 +176,112 @@ Para apenas tirar o aquivo da área de preparação:
 git reset nome_arquivo
 ```
 ## Aula 4: Enviando e Baixando Alterações com Respositório Remoto 
+
+Adicionar repositório remoto para o repositório Local
+
+```git
+git remote add origin (https ou chave ssh)
+```
+
+Colocar como branch main caso esteja usando a branch master
+
+```git
+git branch -M main
+```
+
+Comando push para coloar os arquivos no repositório remoto
+
+```git
+git push -u origin main
+```
+Para abrir o editor online do github, dentro do repositório apertar a tecla ponto. Vai abrir um editor semelhante ao VSCode.
+
+Para atualizar o repositório local com as alterações feitas no repositório remoto:
+
+```git
+git pull
+```
+
+## Aula 5: Trabalhando com Branches - Criando, Mesclando, Deletando e Tratando Conflitos
+
+ Branch = Ramo (ramificação do seu projeto).
+<p> É um ponteiro móvel para o commit no histórico do repositório.
+ Quando você cria uma nova branch a partir de uma branch já existente ela passa apontar para o mesmo commit que estava a branch anterior.
+ Se você fizer um novo commit com sua nova branch somente a nova branch irá apontar para esse novo commit
+ Para que a branch anterior também aponte para o novo commit da branch nova deverá **mesclar as branches**.
+ </p>
+ 
+Criar uma nova branch
+ 
+```git
+git checkout -b nome_nova_branch
+```
+
+Retornar para a branch anterior (branch main)
+
+```git
+git checkout main
+```
+
+Listar o último commit de cada branch
+
+```git
+git branch -v
+```
+Listar as branches
+```git
+git branch 
+```
+Mesclar banches
+
+```git
+git merge nome_nova_branch
+```
+
+Excluir branch
+
+```git
+git branch -d nome_branch
+```
+
+## Aula 6: Trabalhando com Branches - Comandos Úteis no Dia a Dia
+
+Baixar o conteúdo do repositório remoto (sem mesclar com sua branch)
+
+```git
+git fetch origin main
+```
+
+Ver diferenças entre as Branches
+
+```git
+git diff main origin/main
+```
+
+Clonar um repositório com várias branches e você queira clonar apenas uma branch:
+
+```git
+git clone (https ou chave SSH) --branch nome_branch --single-branch
+```
+
+Caso queira criar uma nova branch mas não queira que ela considere uma modificação feita da branch anterior
+As modificações da última branch
+
+```git
+git stash
+```
+
+Ao retornar para a branch antiga, você pode trazer as modificações arquivadas e excluir a modificação recente.
+
+```git
+git stash pop
+```
+
+Ou pode atualizar para a modificação recente:
+
+```git
+git stash apply
+```
+
+
+
