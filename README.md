@@ -16,6 +16,7 @@ Respositório contém um resumo sobre Git e GitHub apresentado durante o Bootcam
 |Aula 1|[Criando um Respositório Local Com Git]()|
 |Aula 2|[Salvando Alteração No Respositório local]()|
 |Aula 3|[Desfazendo Alterações No Respositório Local]()|
+|Aula 4|[Enviando e Baixando Alterações com Respositório Remoto]()|
 
 lista de comandos apresentados:
    ``` git
@@ -27,6 +28,15 @@ lista de comandos apresentados:
 	 git commit -m "first commit"
 	 git push -u origin main
 	 git log
+	 rm -rf .git
+	 git restore nome_arquivo
+	 git commit --amend -m "mensagem modificada"
+	 git commit --amend
+	 git reset --soft hash_do_commit
+	 git reset --mixed hash_do_commit
+	 git reset --hard hash_do_commit
+	 git ref log
+	 git reset nome_arquivo
    ```
 
 
@@ -106,3 +116,62 @@ touch pasta_vazia\.gitkeep
 ```
 
 Assim o git passará a reconhecer sua pasta. Veja pelo git status!
+
+### Aula 3: Desfazendo Alterações No Respositório Local
+
+Para remover um repositrório git inicializado com **git init** em uma pasta errada:
+
+```git
+rm -rf .git
+```
+
+Para restaurar arquivos modificados que já foram salvos:
+
+```git
+git restore nome_arquivo
+```
+
+Para alterar a mensagem do último commit:
+
+```git
+git commit --amend -m "mensagem modificada"
+```
+
+Outra forma de fazer a modificação: 
+```git
+git commit --amend
+```
+
+Dessa forma ele abrirá o editor de texto para ser feita a modificação.
+
+Para desfazer o último commit podemos usar um dos três comandos:
+
+```git
+git reset --soft hash_do_commit
+git reset --mixed hash_do_commit
+git reset --hard hash_do_commit
+```
+
+Para visualizar o hash do commit utiize o comando git log.
+
+|--|função|
+|---|---|
+|soft|arquivos posterior ao commit informado vão para a área de preparação|
+|mixed| arquivos posteriores ao commit informado vão para status untracked files|
+|hard| arquivos posterior ao commit informado são completamente apagados|
+
+mixed é o padrão do git para o comando reset 
+
+Para ter os logs mais detalhados
+
+```git
+git ref log
+```
+
+Para apenas tirar o aquivo da área de preparação:
+
+```git
+git reset nome_arquivo
+```
+## Aula 4: Enviando e Baixando Alterações com Respositório Remoto 
+
