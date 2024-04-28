@@ -157,7 +157,7 @@ Para visualizar o hash do commit utiize o comando git log.
 |--|função|
 |---|---|
 |soft|arquivos posterior ao commit informado vão para a área de preparação|
-|mixed| arquivos posteriores ao commit informado vão para status untracked files|
+|mixed| arquivos posterior ao commit informado vão para status untracked files|
 |hard| arquivos posterior ao commit informado são completamente apagados|
 
 mixed é o padrão do git para o comando reset 
